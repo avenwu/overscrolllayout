@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.avenwu.overscrolllayout.OverScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#43A047"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Powered by "
+            android:textColor="@android:color/white"
+            tools:text="Powered by htttp://avenwu.net" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="net.avenwu.overscrolllayout.ItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#42A5F5"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="net.avenwu.overscrolllayout.ItemFragment"
+        tools:listitem="@layout/fragment_item" />
+
+</net.avenwu.overscrolllayout.OverScrollLayout>
+
